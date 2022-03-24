@@ -25,27 +25,27 @@ function getUVdataFromIP() {
         .then((response) => response.json())
         .then((data) => {
           response = data.result;
-          uvTime = response.uv_time
-          uvTime = uvTime.slice(11,19)
-          uvMaxTime = response.uv_max_time
-          uvMaxTime = uvMaxTime.slice(11,19)
-          $('#uv-index-data').html(`
+          uvTime = response.uv_time;
+          uvTime = uvTime.slice(11, 19);
+          uvMaxTime = response.uv_max_time;
+          uvMaxTime = uvMaxTime.slice(11, 19);
+          $("#uv-index-data").html(`
           <p>${response.uv}</p>
           <p>${uvTime}</p>
           <p>${response.uv_max}</p>
           <p>${uvMaxTime}</p>
           <p>${response.safe_exposure_time.st3} minutes</p>
           `);
-          sunInfo = response.sun_info.sun_times
-          solarNoon = sunInfo.solarNoon.slice(11,19)
-          sunrise = sunInfo.sunrise.slice(11,19)
-          sunset = sunInfo.sunset.slice(11,19)
-          dawn = sunInfo.dawn.slice(11,19)
-          dusk = sunInfo.dusk.slice(11,19)
-          goldenHourStart = sunInfo.goldenHour.slice(11,19)
-          goldenHourEnd = sunInfo.goldenHourEnd.slice(11,19)
+          sunInfo = response.sun_info.sun_times;
+          solarNoon = sunInfo.solarNoon.slice(11, 19);
+          sunrise = sunInfo.sunrise.slice(11, 19);
+          sunset = sunInfo.sunset.slice(11, 19);
+          dawn = sunInfo.dawn.slice(11, 19);
+          dusk = sunInfo.dusk.slice(11, 19);
+          goldenHourStart = sunInfo.goldenHour.slice(11, 19);
+          goldenHourEnd = sunInfo.goldenHourEnd.slice(11, 19);
 
-          $('#extra-sun-info').html(`
+          $("#extra-sun-info").html(`
           <p>${solarNoon}</p>
           <p>${sunrise}</p>
           <p>${sunset}</p>
@@ -72,10 +72,49 @@ function searchCityLatAndLong(query) {
     lon = Math.round(data.center[0] * 100) / 100;
     $("#request-form-data-search").html(
       ` <p>${data.text}</p>
-        <p>${data.context[2].text}</p>
         <p>${lat}</p>
         <p>${lon}</p>`
     );
+    let UVApi = "https://api.openuv.io/api/v1/uv?lat=" + lat + "&lng=" + lon;
+    fetch(UVApi, {
+      method: "GET",
+      headers: {
+        "x-access-token": "0b229f7be43154465f0d898f6e117b4c",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        response = data.result;
+        uvTime = response.uv_time;
+        uvTime = uvTime.slice(11, 19);
+        uvMaxTime = response.uv_max_time;
+        uvMaxTime = uvMaxTime.slice(11, 19);
+        $("#uv-index-data").html(`
+              <p>${response.uv}</p>
+              <p>${uvTime}</p>
+              <p>${response.uv_max}</p>
+              <p>${uvMaxTime}</p>
+              <p>${response.safe_exposure_time.st3} minutes</p>
+              `);
+        sunInfo = response.sun_info.sun_times;
+        solarNoon = sunInfo.solarNoon.slice(11, 19);
+        sunrise = sunInfo.sunrise.slice(11, 19);
+        sunset = sunInfo.sunset.slice(11, 19);
+        dawn = sunInfo.dawn.slice(11, 19);
+        dusk = sunInfo.dusk.slice(11, 19);
+        goldenHourStart = sunInfo.goldenHour.slice(11, 19);
+        goldenHourEnd = sunInfo.goldenHourEnd.slice(11, 19);
+
+        $("#extra-sun-info").html(`
+              <p>${solarNoon}</p>
+              <p>${sunrise}</p>
+              <p>${sunset}</p>
+              <p>${dawn}</p>
+              <p>${dusk}</p>
+              <p>${goldenHourStart}</p>
+              <p>${goldenHourEnd}</p>
+              `);
+      });
   });
 }
 

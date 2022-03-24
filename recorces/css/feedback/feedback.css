@@ -1,0 +1,66 @@
+main{
+    margin-top: 70px;
+}
+
+header{
+    overflow: auto;
+}
+
+textarea {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 10px;
+    width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border-color: rgb(201, 201, 201);
+    border-radius: 0px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+form{
+    position: relative;
+}
+
+.card{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 40px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.textarea-container{
+    width: 90%;
+    margin: auto;
+}
+
+.submit-container{
+    position:absolute;
+    right: 50px;
+}
+
+.card h1{
+    text-align: center;
+    margin-top: 24px;
+}
+
+.submit-container input{
+    padding: 10px 20px;
+    background-color: #0abde3;
+    border-radius: 25px;
+    border: transparent;
+    color: white;
+    font-weight: 400;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.submit-container input:hover{
+    background-color: #117f97
+}

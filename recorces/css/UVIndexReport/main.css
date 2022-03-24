@@ -82,11 +82,11 @@ header{
 }
 
 .form-location{
-    display: none;
+    /* display: none; */
 }
 
 .form-search{
-    /* display: none; */
+    display: none;
     position: relative;
 }
 

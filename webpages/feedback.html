@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ultraviolet Index</title>
 
     <!-- meta tags -->
@@ -21,8 +21,8 @@
     <!-- css -->
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="../recorces/css/header/header.imports.css" />
+    <link rel="stylesheet" href="../recorces/css/feedback/feedback.css" />
     <link rel="stylesheet" href="../recorces/css/@media/@media.index.css" />
-
 
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="/logo.ico" />
@@ -53,51 +53,80 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css"
     />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="top-nav">
+      <nav class="top-nav">
+        <img src="/recorces/images/icon normal.png" />
+        <ul class="nav-left">
+          <li class="nav-left-item menu">
+            <ion-icon class="menu-btn" name="menu-sharp"></ion-icon>
+          </li>
+          <li class="nav-left-item">
+            <h1><a href="../index.html">Ultraviolet Index</a></h1>
+          </li>
+          <li class="nav-left-item link">
+            <a href="./uvIndexReport.html">UV index report</a>
+          </li>
+          <li class="nav-left-item link">
+            <a href="./feedback.html">Feed Back</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="side-nav">
+        <ion-icon class="close-btn" name="close"></ion-icon>
+        <div class="side-nav-logo-container">
           <img src="/recorces/images/icon normal.png" />
-          <ul class="nav-left">
-            <li class="nav-left-item menu">
-              <ion-icon class="menu-btn" name="menu-sharp"></ion-icon>
+        </div>
+        <hr />
+        <div class="side-nav-links">
+          <ul>
+            <li class="side-nav-item">
+              <h1>Ultraviolet Index</h1>
             </li>
-            <li class="nav-left-item">
-              <h1><a>Ultraviolet Index</a></h1>
+            <li class="side-nav-item">
+              <a href="../index.html">Home</a>
             </li>
-            <li class="nav-left-item link">
-              <a href="./webpages/uvIndexReport.html">UV index report</a>
+            <li class="side-nav-item">
+              <a href="./uvIndexReport.html">UV Report</a>
             </li>
-            <li class="nav-left-item link">
-              <a href="#">Feed Back</a>
+            <li class="side-nav-item">
+              <a href="./feedback.html">Feed Back</a>
             </li>
           </ul>
-        </nav>
-        <nav class="side-nav">
-          <ion-icon class="close-btn" name="close"></ion-icon>
-          <div class="side-nav-logo-container">
-            <img src="/recorces/images/icon normal.png" />
+        </div>
+      </nav>
+      <div class="side-nav-backdrop"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8">
+            <div class="card">
+              <h1>Feed back</h1>
+              <br>
+              <p>Please fill out this feedback form as it will help me improve this web application</p>
+              <br>
+              <div class="form-group">
+                <form>
+                  <div class="textarea-container">
+                    <textarea
+                      id="story"
+                      name="story"
+                      rows="5"
+                      cols="33"
+                    >Type something...</textarea>
+                  </div>
+                  <br />
+                  <div class="submit-container">
+                    <input type="submit" value="submit" />
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-          <hr />
-          <div class="side-nav-links">
-            <ul>
-              <li class="side-nav-item">
-                <h1>Ultraviolet Index</h1>
-              </li>
-              <li class="side-nav-item">
-                <a href="#">Home</a>
-              </li>
-              <li class="side-nav-item">
-                <a href="#">UV Report</a>
-              </li>
-              <li class="side-nav-item">
-                <a href="#">Feed Back</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="side-nav-backdrop"></div>
-      </header>
-      <main></main>
-</body>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
