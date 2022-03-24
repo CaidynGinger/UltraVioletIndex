@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ultraviolet Index</title>
 
     <!-- meta tags -->
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="../recorces/css/header/header.imports.css" />
     <link rel="stylesheet" href="../recorces/css/@media/@media.index.css" />
-
+    <link rel="stylesheet" href="../recorces/css/UVIndexReport/main.css" />
 
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="/logo.ico" />
@@ -46,58 +46,148 @@
       rel="stylesheet"
     />
     <!-- scripts -->
-    <script src="./recorces/javascript/header.js"></script>
+    <script src="../recorces/javascript/header.js"></script>
+    <script src="../recorces/javascript/formButtons.js"></script>
+    <script src="../recorces/javascript/geolocation.js"></script>
 
     <!-- bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css"
     />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="top-nav">
+      <nav class="top-nav">
+        <img src="/recorces/images/icon normal.png" />
+        <ul class="nav-left">
+          <li class="nav-left-item menu">
+            <ion-icon class="menu-btn" name="menu-sharp"></ion-icon>
+          </li>
+          <li class="nav-left-item">
+            <h1><a>Ultraviolet Index</a></h1>
+          </li>
+          <li class="nav-left-item link">
+            <a href="./webpages/uvIndexReport.html">UV index report</a>
+          </li>
+          <li class="nav-left-item link">
+            <a href="#">Feed Back</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="side-nav">
+        <ion-icon class="close-btn" name="close"></ion-icon>
+        <div class="side-nav-logo-container">
           <img src="/recorces/images/icon normal.png" />
-          <ul class="nav-left">
-            <li class="nav-left-item menu">
-              <ion-icon class="menu-btn" name="menu-sharp"></ion-icon>
+        </div>
+        <hr />
+        <div class="side-nav-links">
+          <ul>
+            <li class="side-nav-item">
+              <h1>Ultraviolet Index</h1>
             </li>
-            <li class="nav-left-item">
-              <h1><a>Ultraviolet Index</a></h1>
+            <li class="side-nav-item">
+              <a href="#">Home</a>
             </li>
-            <li class="nav-left-item link">
-              <a href="./webpages/uvIndexReport.html">UV index report</a>
+            <li class="side-nav-item">
+              <a href="#">UV Report</a>
             </li>
-            <li class="nav-left-item link">
+            <li class="side-nav-item">
               <a href="#">Feed Back</a>
             </li>
           </ul>
-        </nav>
-        <nav class="side-nav">
-          <ion-icon class="close-btn" name="close"></ion-icon>
-          <div class="side-nav-logo-container">
-            <img src="/recorces/images/icon normal.png" />
+        </div>
+      </nav>
+      <div class="side-nav-backdrop"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row card-container">
+          <div class="col-lg-6">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="info-card">
+                    <h1>Here is some more information on the report</h1>
+                    <p>you will receive the UV index</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-request-container">
+                    <div class="form-request">
+                      <h4>Request Form</h4>
+                      <hr />
+                      <ul class="form-buttons">
+                        <li>
+                          <button class="form-btn selected">
+                            Use your location
+                          </button>
+                        </li>
+                        <li class="form-btn"><button>Search a city</button></li>
+                      </ul>
+                      <div class="switch-card form-location">
+                        <h5>Here is your location details</h5>
+                        <!-- <p>Don't worry i will keep it safe</p> -->
+                        <div class="data-container">
+                          <div class="left">
+                            <p>City:</p>
+                            <p>Time zone:</p>
+                            <p>Zip code:</p>
+                            <p>Latitude:</p>
+                            <p>Longitude:</p>
+                          </div>
+                          <div id="request-form-data" class="right">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="switch-card form-search">
+                        <!-- <p>Don't worry i will keep it safe</p> -->
+                        <div class="form__group field">
+                          <input
+                            autocomplete="off"
+                            type="input"
+                            class="form__field"
+                            placeholder="city"
+                            name="city"
+                            id="city"
+                            required
+                          />
+                          <label for="name" class="form__label"
+                            >Search City...</label
+                          >
+                        </div>
+                        <div class="data-container">
+                          <div class="left">
+                            <p>City:</p>
+                            <p>Country:</p>
+                            <p>Latitude:</p>
+                            <p>Longitude:</p>
+                          </div>
+                          <div class="right">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                          </div>
+                        </div>
+                        <button class="search-btn">Search</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <hr />
-          <div class="side-nav-links">
-            <ul>
-              <li class="side-nav-item">
-                <h1>Ultraviolet Index</h1>
-              </li>
-              <li class="side-nav-item">
-                <a href="#">Home</a>
-              </li>
-              <li class="side-nav-item">
-                <a href="#">UV Report</a>
-              </li>
-              <li class="side-nav-item">
-                <a href="#">Feed Back</a>
-              </li>
-            </ul>
+          <div class="col-lg-6">
+            <div class="final-report"></div>
           </div>
-        </nav>
-        <div class="side-nav-backdrop"></div>
-      </header>
-      <main></main>
-</body>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
