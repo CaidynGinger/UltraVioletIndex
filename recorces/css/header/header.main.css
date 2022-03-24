@@ -1,0 +1,66 @@
+.header-body {
+  height: 60vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) no-repeat
+      border-box,
+    url(../../images/headerImage.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px -30px 20px 0px rgba(0,0,0,0.5) inset;
+  overflow:auto
+
+}
+
+.hero-text{
+    color: white;
+    width: 40vw;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+.hero-text h1{
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color:  #0abde3;
+    text-underline-offset: 10px; 
+    text-decoration-thickness: 2px;
+    letter-spacing: 1px;
+
+}
+
+.hero-text p {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+
+}
+
+.btn-container{
+    margin-top: 20px;
+}
+
+.btn-custom{
+    border: 2px solid #0abde3;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-custom a{
+    font-weight: 400;
+    padding: 5px;
+}
+
+.btn-full{
+    background-color: #0abde3;
+    margin-right: 20px;
+}
+
+.btn-custom:hover{
+    border: 2px solid #117f97;
+    background-color: #117f97
+
+}
+

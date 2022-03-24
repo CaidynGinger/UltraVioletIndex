@@ -21,13 +21,21 @@
     <!-- css -->
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./recorces/css/header/header.imports.css" />
+    <link rel="stylesheet" href="./recorces/css/body/body.imports.css" />
 
     <link rel="stylesheet" href="./recorces/css/@media.css" />
 
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="/logo.ico" />
     <!-- ion icons -->
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <!-- jQerry -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -40,6 +48,12 @@
     />
     <!-- scripts -->
     <script src="./recorces/javascript/header.js"></script>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css"
+    />
   </head>
   <body>
     <header>
@@ -50,7 +64,7 @@
             <ion-icon class="menu-btn" name="menu-sharp"></ion-icon>
           </li>
           <li class="nav-left-item">
-            <h1><a>Sun Buddy V1</a></h1>
+            <h1><a>Ultraviolet Index</a></h1>
           </li>
           <li class="nav-left-item link">
             <a href="#">UV Report</a>
@@ -65,11 +79,11 @@
         <div class="side-nav-logo-container">
           <img src="/recorces/images/icon normal.png" />
         </div>
-        <hr>
+        <hr />
         <div class="side-nav-links">
           <ul>
             <li class="side-nav-item">
-              <h1>Sun Buddy V1</h1>
+              <h1>Ultraviolet Index</h1>
             </li>
             <li class="side-nav-item">
               <a href="#">Home</a>
@@ -85,10 +99,88 @@
       </nav>
       <div class="side-nav-backdrop"></div>
       <div class="header-body">
-
+        <div class="align-self-center hero-text">
+          <h1>Ultraviolet Index</h1>
+          <p>
+            This is a school project, where I made a web application. Where you
+            can find the Ultraviolet index for your location, or you could
+            request to see the Ultraviolet index at the place you are going to,
+            or where your friend is right now!
+          </p>
+          <div class="btn-container">
+            <div class="btn-custom btn-full">
+              <a>Get searching now</a>
+            </div>
+            <div class="btn-custom btn-ghost">
+              <a>What is a UV index</a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-12 card">
+            <div class="card-content">
+              <div class="icon-container">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <hr />
+              </div>
+              <p>
+                The UV Index is an important vehicle to raise public awareness
+                of the risks of excessive exposure to UV radiation, and to alert
+                people about the need to adopt protective measures. As part of
+                an international effort, the UV index was developed by WHO, the
+                United Nations Environment Programme, and the World
+                Meteorological Organization. Encouraging people to reduce their
+                sun exposure can decrease harmful health effects and
+                significantly reduce health care costs.
+              </p>
+              <br />
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 card">
+            <div class="card-content bottom-card">
+              <div class="icon-container">
+                <ion-icon name="school"></ion-icon>
+                <hr />
+              </div>
+              <p>
+                The UV Index is an important vehicle to raise public awareness
+                of the risks of excessive exposure to UV radiation, and to alert
+                people about the need to adopt protective measures. As part of
+                an international effort, the UV index was developed by WHO, the
+                United Nations Environment Programme, and the World
+                Meteorological Organization. Encouraging people to reduce their
+                sun exposure can decrease harmful health effects and
+                significantly reduce health care costs.
+              </p>
+              <br />
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 card">
+            <div class="card-content bottom-card">
+              <div class="icon-container">
+                <ion-icon name="person-circle"></ion-icon>
+                <hr />
+              </div>
+              <p>
+                The UV Index is an important vehicle to raise public awareness
+                of the risks of excessive exposure to UV radiation, and to alert
+                people about the need to adopt protective measures. As part of
+                an international effort, the UV index was developed by WHO, the
+                United Nations Environment Programme, and the World
+                Meteorological Organization. Encouraging people to reduce their
+                sun exposure can decrease harmful health effects and
+                significantly reduce health care costs.
+              </p>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
