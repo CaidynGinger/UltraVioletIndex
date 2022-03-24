@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1200px){
+    .final-report-container {
+        height: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 380px) {
+    .final-report-data .left{
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    .data-container .left{
+        float: none;
+    }
+    .data-container .right{
+        float: none;
+    }
+    .form-request-container{
+        height: 500px;
+    }
+}

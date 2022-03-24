@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log("js ready")
 
     $('.menu').click(function (e) {
         e.preventDefault();

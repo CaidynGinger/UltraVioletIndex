@@ -1,0 +1,44 @@
+.final-report{
+    padding: 20px;
+}
+
+.final-report p{
+    margin-top: 5px;
+}
+
+.final-report h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.final-report-data {
+    margin-top: 20px;
+}
+.final-report-data .left{
+    float: left;
+    width: 70%;
+}
+
+.final-report-data .right{
+    float: left;
+}
+
+.extra-sun-info{
+    margin-top: 120px;
+}
+
+.extra-sun-info h2{
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 5px;
+}
+
+.definitions {
+    margin-top: 200px;
+}
+
+.definitions h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}

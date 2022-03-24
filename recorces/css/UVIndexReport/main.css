@@ -1,4 +1,5 @@
 @import url("./forminput.css");
+@import url("./Report.css");
 
 main{
     margin-top: 70px;
@@ -25,11 +26,11 @@ header{
     border-radius: 25px;
 }
 
-.final-report{
+.final-report-container{
     margin-top: 40px;
     height: calc(75vh + 40px);
     width: 100%;
-    background-color: aquamarine;
+    background-color: white;
 }
 
 .form-buttons{

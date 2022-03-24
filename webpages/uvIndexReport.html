@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../recorces/css/header/header.imports.css" />
     <link rel="stylesheet" href="../recorces/css/@media/@media.index.css" />
     <link rel="stylesheet" href="../recorces/css/UVIndexReport/main.css" />
+    <link rel="stylesheet" href="../recorces/css/@media/@media.report.css" />
 
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="/logo.ico" />
@@ -106,12 +107,12 @@
           <div class="col-lg-6">
             <div class="container">
               <div class="row">
-                <div class="col-12">
+                <!-- <div class="col-12">
                   <div class="info-card">
                     <h1>Here is some more information on the report</h1>
                     <p>you will receive the UV index</p>
                   </div>
-                </div>
+                </div> -->
                 <div class="col-12">
                   <div class="form-request-container">
                     <div class="form-request">
@@ -168,7 +169,7 @@
                             <p>Latitude:</p>
                             <p>Longitude:</p>
                           </div>
-                          <div class="right">
+                          <div id="request-form-data-search" class="right">
                             <p></p>
                             <p></p>
                             <p></p>
@@ -184,7 +185,71 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="final-report"></div>
+            <div class="final-report-container">
+              <div class="final-report">
+                <h1>Ultraviolet Report</h1>
+                <hr />
+                <div class="final-report-data">
+                  <div class="left">
+                    <p>UV index:</p>
+                    <p>UV index at time:</p>
+                    <p>UV index max for the day:</p>
+                    <p>UV index max for the day time:</p>
+                    <p>Safe exposure time:</p>
+                  </div>
+                  <div id="uv-index-data" class="right">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="extra-sun-info">
+                  <h2>Extra information about the sun</h2>
+                  <hr />
+                  <div class="final-report-data">
+                    <div class="left">
+                      <p>Solar noon:</p>
+                      <p>Sunrise is at:</p>
+                      <p>Set is at:</p>
+                      <p>dawn is at:</p>
+                      <p>dusk is at:</p>
+                      <p>golden hour starts at:</p>
+                      <p>golden hour ends at:</p>
+                    </div>
+                    <div id="extra-sun-info" class="right">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="definitions">
+                  <h2>Definitions</h2>
+                  <hr />
+                  <p>
+                    <h3>UV index</h3>
+                    the measurement of the level of uv radiation (the cause of
+                    sun burn)
+                  </p>
+                  <p>
+                    <h3>Solar noon</h3>
+                    Solar noon is the moment when the Sun passes a location's
+                    meridian and reaches its highest position in the sky
+                  </p>
+                  <p>
+                    <h3>Golden hour</h3>
+                    In photography, the golden hour is the period of daytime
+                    shortly after sunrise or before sunset
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

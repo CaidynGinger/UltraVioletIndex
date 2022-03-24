@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  console.log("js ready");
 
   $(".form-btn").click(function (e) {
     e.preventDefault();
