@@ -10,7 +10,6 @@
 .card-content{
     background-color: rgb(19, 19, 19);
     box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
-    overflow: auto;
 }
 
 .icon-container{
@@ -18,7 +17,6 @@
     color: white;
     margin: auto;
     width: 50px;
-    margin-top: 24px;
 }
 
 .icon-container hr{
@@ -29,6 +27,13 @@
 }
 
 .card-content p{
+    height: 250px;
     padding: 20px;
     color: white;
+}
+
+.anchor-p{
+    text-underline-offset: 2px; 
+    color: white;
+    text-decoration-color: white;
 }

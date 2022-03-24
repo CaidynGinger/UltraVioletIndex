@@ -19,19 +19,31 @@
     .hero-text p{
         font-size: 18px;
     }
-    .btn-custom{
-        width: 100%;
-        margin-bottom: 20px;
-    }
 
     .row{
         margin-top: 20px;
     }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 620px) {
+    .btn-custom{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .header-body{
+        height: 68vh;
+    } 
+}
+
+@media only screen and (max-width: 450px){
     .header-body{
         height: 65vh;
+    } 
+}
+
+@media only screen and (max-width: 455px){
+    .header-body{
+        height: 70vh;
     } 
 }
 
@@ -67,7 +79,7 @@
         font-size: 14px;
     }
     .header-body{
-        height: 60vh;
+        height: 65vh;
     } 
 }
 
