@@ -46,13 +46,22 @@
       rel="stylesheet"
     />
     <!-- scripts -->
-    <script src="./recorces/javascript/header.js"></script>
+    <script src="../recorces/javascript/header.js"></script>
 
     <!-- bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css"
     />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89M2S8N3DD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-89M2S8N3DD');
+</script>
   </head>
   <body>
     <header>
@@ -63,7 +72,7 @@
             <ion-icon class="menu-btn" name="menu-sharp"></ion-icon>
           </li>
           <li class="nav-left-item">
-            <h1><a href="../index.html">Ultraviolet Index</a></h1>
+            <h1><a href="http://ultravioletindex.co.za/">Ultraviolet Index</a></h1>
           </li>
           <li class="nav-left-item link">
             <a href="./uvIndexReport.html">UV index report</a>
@@ -85,7 +94,7 @@
               <h1>Ultraviolet Index</h1>
             </li>
             <li class="side-nav-item">
-              <a href="../index.html">Home</a>
+              <a href="http://ultravioletindex.co.za/">Home</a>
             </li>
             <li class="side-nav-item">
               <a href="./uvIndexReport.html">UV Report</a>
@@ -108,18 +117,18 @@
               <p>Please fill out this feedback form as it will help me improve this web application</p>
               <br>
               <div class="form-group">
-                <form>
+                <form method="post" action="contact.php">
                   <div class="textarea-container">
                     <textarea
                       id="story"
-                      name="story"
+                      name="feedback"
                       rows="5"
                       cols="33"
                     >Type something...</textarea>
                   </div>
                   <br />
                   <div class="submit-container">
-                    <input type="submit" value="submit" />
+                    <input type="submit" value="submit" name="submit" />
                   </div>
                 </form>
               </div>

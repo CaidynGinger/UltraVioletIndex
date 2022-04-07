@@ -1,4 +1,5 @@
 function getUVdataFromIP() {
+    console.log('getting data')
   const IPApi = "http://ip-api.com/json";
   fetch(IPApi, {
     method: "GET",
@@ -118,4 +119,4 @@ function searchCityLatAndLong(query) {
   });
 }
 
-// getUVdataFromIP();
+getUVdataFromIP();

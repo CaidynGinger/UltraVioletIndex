@@ -45,6 +45,9 @@
     .header-body{
         height: 70vh;
     } 
+    .card-content p{
+        height: 320px;
+    }
 }
 
 @media only screen and (max-width: 340px) {
@@ -97,7 +100,6 @@
     
 
     .card-content{
-        width: 70%;
         margin: auto;
     }
     .bottom-card{

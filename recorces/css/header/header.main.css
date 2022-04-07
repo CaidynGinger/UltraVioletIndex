@@ -51,6 +51,8 @@
 .btn-custom a{
     font-weight: 400;
     padding: 5px;
+    color: white;
+    text-decoration: none;
 }
 
 .btn-full{
