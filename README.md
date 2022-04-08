@@ -26,7 +26,7 @@
     
    <br />
    <br />
-   <a href="path/to/demonstration/video">View Demo</a>
+   <a href="https://www.youtube.com/watch?v=6YfXCDOkgfI">View Demo</a>
     ·
     <a href="https://github.com/CaidynGinger/UltraVioletIndex/issues">Report Bug</a>
     ·
