@@ -138,7 +138,7 @@ Here a users UV index will be automataccily found and displayed in the uv report
 
 Here users can email me feedback on the website
 
-![image4](https://github.com/CaidynGinger/UltraVioletIndex/blob/main/Readme%20images/Mockup.png)
+![image4](https://github.com/CaidynGinger/UltraVioletIndex/blob/main/Readme%20images/Mockup%205.png)
 
 <!-- DEVELOPMENT PROCESS -->
 
