@@ -126,19 +126,19 @@ Here are a couple of ways to clone this repo:
 
 The home page features a side nav on modile which dissaperes on lager screens
 
-![image3](https://github.com/CaidynGinger/UltraVioletIndex/blob/main/Readme%20images/Mobile%20Mockup%201.png)
+![image2](https://github.com/CaidynGinger/UltraVioletIndex/blob/main/Readme%20images/Mobile%20Mockup%201.png)
 
 ### Feature 2
 
 Here a users UV index will be automataccily found and displayed in the uv report
 
-![image4](https://github.com/CaidynGinger/UltraVioletIndex/blob/main/Readme%20images/Mockup%203.png)
+![image3](https://github.com/CaidynGinger/UltraVioletIndex/blob/main/Readme%20images/Mockup%203.png)
 
 ### Feature 3
 
-Description of Feature
+Here users can email me feedback on the website
 
-![image5][image5]
+![image4](https://github.com/CaidynGinger/UltraVioletIndex/blob/main/Readme%20images/Mockup.png)
 
 <!-- DEVELOPMENT PROCESS -->
 
@@ -218,9 +218,9 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image9][image9]
+![image4](https://github.com/CaidynGinger/UltraVioletIndex/blob/main/Readme%20images/Mobile%20Mockup%201.png)
 <br>
-![image10][image10]
+![image5](https://github.com/CaidynGinger/UltraVioletIndex/blob/main/Readme%20images/Mockup.png)
 
 <!-- VIDEO DEMONSTRATION -->
 
@@ -228,7 +228,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 To see a run through of the application, click below:
 
-[View Demonstration](path/to/video/demonstration)
+[View Demonstration](https://www.youtube.com/watch?v=6YfXCDOkgfI)
 
 See the [open issues](https://github.com/CaidynGinger/UltraVioletIndex/issues) for a list of proposed features (and known issues).
 
